@@ -159,6 +159,19 @@ h3 {
   margin: 10px 10px 0px 0px;
 }
 
+
+.logomy {
+  width: 50px;
+  height: 50px;
+  margin-left: 200px;
+}
+
+.titlelogo {
+  display: flex;
+  align-items: center;
+  margin: 10px 10px 0px 0px;
+}
+
 /* Responsive */
 
 @media screen and (max-width: 600px) {
@@ -190,21 +203,18 @@ h3 {
     font-size: 14px;
     width: 100%;
   }
+
+  .logomy {
+    width: 50px;
+    height: 50px;
+    margin-left: 50px;
+  }
+  
+  .titlelogo {
+    display: flex;
+    align-items: center;
+    margin: 10px 10px 0px 0px;
+  }
 }
 
-@media screen and (max-width: 600px) {
 
-}
-
-.logomy {
-  width: 50px;
-  height: 50px;
-  margin-left: 200px;
-}
-
-.titlelogo {
-  display: flex;
-  /* justify-content:space-between ; */
-  align-items: center;
-  margin: 10px 10px 0px 0px;
-}
