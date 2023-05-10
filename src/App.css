@@ -196,3 +196,15 @@ h3 {
 
 }
 
+.logomy {
+  width: 50px;
+  height: 50px;
+  margin-left: 200px;
+}
+
+.titlelogo {
+  display: flex;
+  /* justify-content:space-between ; */
+  align-items: center;
+  margin: 10px 10px 0px 0px;
+}

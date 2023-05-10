@@ -48,10 +48,11 @@ function TodoList() {
 
   return (
     <div>
-        <div className="title">
-      <h1>My ToDo List</h1>
-      {/* <img className="TodoImg" src="edition.png"></img> */}
+      <div className="titlelogo">
+        <h1>My ToDo List</h1>
+        <img className="logomy" src={process.env.PUBLIC_URL + '/mylogo2.png'} alt="logo" />
       </div>
+      
       <TodoForm onSubmit={addTodo} />
       <Todo
         todos={todos}

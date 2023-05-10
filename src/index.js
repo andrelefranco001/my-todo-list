@@ -6,7 +6,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
-    <h3 className="animate__animated animate__fadeIn">Created by Andres Velasquez Franco</h3>
+    <h3 className="animate__animated animate__fadeIn"> My Technology is created by Andres Velasquez Franco</h3>
   </React.StrictMode>
 );
 
