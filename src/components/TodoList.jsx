@@ -1,24 +1,34 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Todo from "./Todo";
 import TodoForm from "./TodoForm";
 
-
 function TodoList() {
   const [todos, setTodos] = useState([]);
+
+  useEffect(() => {
+    const storedTodos = JSON.parse(localStorage.getItem("todos"));
+    if (storedTodos) {
+      setTodos(storedTodos);
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("todos", JSON.stringify(todos));
+  }, [todos]);
 
   const addTodo = (todo) => {
     if (!todo.text || /^\s*$/.test(todo.text)) {
       return;
     }
-  
+
     const newTodo = {
       id: Math.floor(Math.random() * 10000),
       text: todo.text,
-      isComplete: false
+      isComplete: false,
     };
-    
+
     const newTodos = [newTodo, ...todos];
-  
+
     setTodos(newTodos);
   };
 
@@ -50,9 +60,13 @@ function TodoList() {
     <div>
       <div className="titlelogo">
         <h1>My ToDo List</h1>
-        <img className="logomy" src={process.env.PUBLIC_URL + '/mylogo2.png'} alt="logo" />
+        <img
+          className="logomy"
+          src={process.env.PUBLIC_URL + "/mylogo2.png"}
+          alt="logo"
+        />
       </div>
-      
+
       <TodoForm onSubmit={addTodo} />
       <Todo
         todos={todos}
