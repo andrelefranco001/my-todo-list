@@ -1,6 +1,6 @@
 # My ToDo List
 
-![Frame 4](./public/Frame%204.png "Intro")
+![Frame 4](./public/Frame_4.png "Intro")
 
 "My ToDo List" is an app that allows you to create your own to-do list. You can use it in various ways, such as making a shopping list, reminders of pending tasks, or even planning your daily activities.
 
@@ -11,9 +11,9 @@ In addition, the app allows you to edit, mark as completed, and delete the tasks
 ![Frame 2](./public/Frame_2.png "Edit")
 
 ---
-## My ToDo List Movil version
+## My ToDo List Mobile version
 
-![Movil version](./public/Frame%205.png "Movil Version")
+![Mobile version](./public/Frame_5.png "Mobile Version")
 
 ---
 ## Stop wasting time remembering everything you have to do and enjoy "My ToDo List"! ✨🎉
